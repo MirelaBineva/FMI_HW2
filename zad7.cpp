@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+const int NUM = 18;
 int func (int number)
 {
     int firstDigit;
@@ -29,9 +29,9 @@ int main()
     while (newNum!=0)
     {
         number++;
-        newNum=func(number*18);
+        newNum=func(number*NUM);
     }
-    newNum = number*18;
+    newNum = number*NUM;
     cout << "The number we want is: " << number << endl;
     cout << "The number multiplied by 18 is: " << newNum;
     return 0;
